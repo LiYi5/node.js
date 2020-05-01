@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+    <script src="/assets/todo-list.js"> </script>
+</head>
+<body>
+    <div id="todo-table">
+        <form >
+            <input type="text" name="item" placeholder="Add new item..." required/>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <ul>
+            <% data.forEach(function (todo) { %>
+                    <li> <%= todo.item%></li>
+
+           <% }) %>
+        </ul>
+    </div>
+</body>
+</html>
